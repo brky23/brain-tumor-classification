@@ -315,31 +315,23 @@ Aşağıdaki metrikler **test seti** üzerinde hesaplanır:
 
 ## 📊 Sonuçlar
 
-> **Not:** Aşağıdaki değerler eğitim sonrasında `results/metrics/model_comparison.csv` dosyasından güncellenmelidir.
-
 ### Model Karşılaştırması
 
-| Model | Accuracy | Macro Precision | Macro Recall | Macro F1 | Weighted F1 | Mean AUC |
-|-------|----------|-----------------|--------------|----------|-------------|----------|
-| Custom CNN | _XX_ | _XX_ | _XX_ | _XX_ | _XX_ | _XX_ |
-| **EfficientNetB0** | _XX_ | _XX_ | _XX_ | _XX_ | _XX_ | _XX_ |
+| Model | Accuracy | Macro F1 | Weighted F1 | Mean AUC |
+| --- | --- | --- | --- | --- |
+| Custom CNN | 81.75% | 0.8082 | 0.8082 | 0.9498 |
+| **EfficientNetB0** ⭐ | **93.19%** | **0.9305** | **0.9305** | **0.9878** |
 
-### Per-Class Performansı (En İyi Model)
+> 💡 EfficientNetB0 transfer learning ile Custom CNN'i %11.44 farkla geçmiştir. Bu sonuç, tıbbi görüntü sınıflandırmasında transfer öğrenmenin gücünü kanıtlamaktadır.
 
-| Sınıf | Precision | Recall | F1-Score | Support |
-|-------|-----------|--------|----------|---------|
-| glioma | _XX_ | _XX_ | _XX_ | _XX_ |
-| meningioma | _XX_ | _XX_ | _XX_ | _XX_ |
-| notumor | _XX_ | _XX_ | _XX_ | _XX_ |
-| pituitary | _XX_ | _XX_ | _XX_ | _XX_ |
+### Per-Class Performansı (EfficientNetB0)
 
-### Görsel Sonuçlar
-
-- 📊 Eğitim eğrileri: `results/figures/training_curves_*.png`
-- 🎯 Confusion matrix'leri: `results/figures/cm_*.png`
-- 📈 ROC eğrileri: `results/figures/roc_*.png`
-- 🔍 Örnek tahminler: `results/figures/sample_predictions.png`
-
+| Sınıf | Precision | Recall | F1-Score | AUC | Support |
+| --- | --- | --- | --- | --- | --- |
+| glioma | 0.9752 | 0.7875 | 0.8714 | 0.969 | 400 |
+| meningioma | 0.8539 | 0.9500 | 0.8994 | 0.983 | 400 |
+| notumor | 0.9545 | 0.9975 | 0.9756 | 1.000 | 400 |
+| pituitary | 0.9589 | 0.9925 | 0.9754 | 0.999 | 400 |
 ---
 
 ## 🔍 Grad-CAM Analizi
@@ -391,8 +383,14 @@ Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
 
 ## 👤 Yazar
 
-Bu proje, [Üniversite/Ders adı] kapsamında geliştirilmiştir.
+**Ahmet Berkay Kantarcı**
 
+- 🎓 **Üniversite:** OSTİM Teknik Üniversitesi
+- 📚 **Bölüm:** Yapay Zeka Mühendisliği — 3. Sınıf
+- 📖 **Ders:** Derin Öğrenme
+- 👨‍🏫 **Danışman:** Murat Şimşek
+- 📅 **Tarih:** Mayıs 2026
+- 🔗 **GitHub:** [@brky23](https://github.com/brky23)
 ## 🙏 Teşekkürler
 
 - Veri seti: Masoud Nickparvar (Kaggle)
