@@ -1,0 +1,9 @@
+Model,Sınıf,Precision,Recall,F1-Score,Support
+Custom CNN,glioma,0.9955,0.5525,0.7106,400
+Custom CNN,meningioma,0.7170,0.7475,0.7319,400
+Custom CNN,notumor,0.8376,0.9800,0.9032,400
+Custom CNN,pituitary,0.8032,0.9900,0.8869,400
+EfficientNetB0,glioma,0.9752,0.7875,0.8714,400
+EfficientNetB0,meningioma,0.8539,0.9500,0.8994,400
+EfficientNetB0,notumor,0.9545,0.9975,0.9756,400
+EfficientNetB0,pituitary,0.9589,0.9925,0.9754,400
